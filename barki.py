@@ -10,17 +10,17 @@ import requests
 from pandas.io.json import json_normalize
 #from streamlit.script_runner import StopException, RerunException
 
-
+st.image('amb.jpeg')
 fig = go.Figure()
 st.write("""
 # COVID19 FOLLOWING APP 
-[Coronavirus COVID19 API](https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest#81447902-b68a-4e79-9df9-1b371905e9fa) in this link you will find the data for this app.
+[Coronavirus COVID19 API](https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest#81447902-b68a-4e79-9df9-1b371905e9fa) here you will find the data for this app.
 """)
 
-st.write('COVID-19 (coronavirus disease 2019) is an infectious disease caused by a virus named SARS-CoV-2 and was discovered in December 2019 in Wuhan, China. It is very contagious and has quickly spread around the world.'+
+st.write('COVID-19 is an infectious disease caused by a virus named SARS-CoV-2 and was discovered in December 2019 in Wuhan, China. It is very contagious and has quickly spread around the world.'+
          'COVID-19 most often causes respiratory symptoms that can feel much like a cold, a flu, or pneumonia. COVID-19 may attack more than your lungs and respiratory system. Other parts of your body may also be affected by the disease.Some people including those with minor or no symptoms may suffer from post-COVID conditions — or “long COVID.Older adults and people who have certain underlying medical conditions are at increased risk of severe illness from COVID-19.'+
          'There are some governments that are taking measures to prevent a sanitary collapse to be able to take care of all these people.'+
-         'I\'m tackling this challenge here. Here you can see how some countries/regions are working!')
+         'I\'m solving this issue here. Here you can notice how some countries/regions are working!')
 st.write('When choosing some countries like Martinique,New Calidonia,Nuie,Heard and McDonalds Islands...you will notice that the app will display an error ,don\'t be surprise that is due to the fact that those countries don\'t have their informations in the dataset because we are using an online one')
 
 url = 'https://api.covid19api.com/countries'
@@ -92,7 +92,7 @@ else:
     fig.add_trace(go.Bar(name = 'World Data', x = x, y = y))
     st.plotly_chart(fig, use_container_width=True)
     
-st.sidebar.subheader("""Created by [Amadou Kindy Barry](https://www.linkedin.com/in/harshit-agrawal-271342110) from """)
+st.sidebar.subheader("""Created by [Amadou Kindy Barry] (barrykind86@gmail.com) """)
 #st.sidebar.image('logo.jpg', width = 300)
 
 
